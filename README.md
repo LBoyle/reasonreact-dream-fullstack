@@ -25,6 +25,10 @@ When running `make init`, you may encounter an error like this:
 
 To address this, first run `opam update`, then rerun `make init`.
 
+--- 
+
+I'm using vscode because it's so easy, I'm not doing an opam switch in the project, I just have a global switch 
+
 ---
 
 #### Development build
