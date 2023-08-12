@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+_build
+_opam
+dist/
+public/main.js
+public/main.js.LICENSE.txt
+
+package-lock.json 
+.vscode 
