@@ -1,3 +1,8 @@
 (library
  (name common)
  (modules types))
+
+; I want to have this library available in both projects
+; perhaps I can do that with a melange.emit, or a rule
+; so it outputs the ocaml module as well as a melange module
+; Sharing types at compile time would be nice 
