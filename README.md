@@ -66,7 +66,7 @@ npm run bundle
 To try it out you can simply execute the binary, as long as it can find /public you're good to go
 
 ```shell
-$ ./_build/default/server/server/exe
+$ ./_build/default/server/server.exe
 ```
 
 ---
