@@ -47,6 +47,10 @@ format-check: ## Checks if format is correct
 watch: ## Watch for the filesystem and rebuild on every change
 	$(DUNE) build --watch 
 
+.PHONY: bundle
+bundle: ## Watch for the filesystem and rebuild on every change
+	npm run bundle
+
 .PHONY: serve
 serve: ## Watch for the filesystem and rebuild on every change
 	$(DUNE) exec --root server ../_build/default/server/server.exe 

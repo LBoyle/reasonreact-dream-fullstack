@@ -25,9 +25,9 @@ When running `make init`, you may encounter an error like this:
 
 To address this, first run `opam update`, then rerun `make init`.
 
---- 
+---
 
-I'm using vscode because it's so easy, I'm not doing an opam switch in the project, I just have a global switch 
+I'm using vscode because it's so easy, I'm not doing an opam switch in the project, I just have a global switch
 
 ---
 
@@ -53,7 +53,7 @@ Or you could use your favourite bundler
 
 ```shell
 npm run dev
-# webpack ... ./_build/default/src/output/src/ReactApp.js
+# webpack ... ./_build/default/src/output/src/Entry.js
 ```
 
 ---
@@ -64,10 +64,10 @@ Cancel all your terminal processes
 
 ```shell
 make build
-npm run bundle
+make bundle
 ```
 
-To try it out you can simply execute the binary, as long as it can find /public you're good to go
+To try it out you can execute the output, as long as it can find /public you're good to go
 
 ```shell
 $ ./_build/default/server/server.exe
@@ -89,15 +89,8 @@ I've used melange and reason-react via opam
 
 [reasonml-labs/decco](https://github.com/reasonml-labs/decco)
 
-The Decco ppx for generating Json serialisers is actually amazing to use, compared to the alternatives. I haven't got it behaving properly yet because it works with `bsconfig.json` which I am not doing, doesn't have its own dune file so I've added one to node_modules by hand. I really want it to work, perhaps I've done this wrong? I'm no good at lisp or dune files
+The Decco ppx for generating Json serialisers is amazing to use compared to the alternatives. I haven't got it behaving properly yet because it works with `bsconfig.json` which I am not doing, doesn't have its own dune file so I've added one to node_modules by hand
 
-```lisp
-; /node_modules/decco/dune
-(library
- (name decco)
- (kind ppx_rewriter))
-```
-
-#### Webpack lol
+#### Webpack
 
 I don't eject config or do anything funny, it's super simple, in this case even easier than parcel, please change it as per your preference

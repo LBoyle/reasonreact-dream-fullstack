@@ -3,8 +3,19 @@
 ;; - remove the `dirs` stanza below
 ;; - add a `(subdir node_modules (dirs only_your_package))`
 
-; (dirs :standard \ node_modules)
+(dirs :standard \ node_modules)
 
-(subdir
- node_modules
- (dirs decco))
+; haven't figured out decco yet
+; (subdir
+;  node_modules
+;  (dirs decco)
+;  (subdir
+;   decco
+;   (dirs src)
+;   (subdir
+;    src
+;    (library
+;     (name decco_runtime)
+;     (wrapped false)
+;     (modes melange)
+;     (melange.compile_flags :standard -w -9)))))

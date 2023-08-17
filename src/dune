@@ -1,8 +1,8 @@
 (melange.emit
  (target output)
  (alias react)
- (libraries reason-react)
+ (libraries reason-react melange-json melange-fetch api app types)
  (modules :standard)
  (preprocess
-  (pps reactjs-jsx-ppx melange.ppx decco))
+  (pps reactjs-jsx-ppx melange.ppx))
  (module_systems es6))

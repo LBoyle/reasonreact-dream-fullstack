@@ -1,6 +1,4 @@
-let greeting: Common.Types.json_thing_t = {
-  greeting: "welcome to json api made with Dream",
-};
+let greeting: Common.Types.greeting_t = {greeting: "Greetings from the API"};
 
 let elt_to_string = elt => Fmt.str("%a", Tyxml.Html.pp_elt(), elt);
 
